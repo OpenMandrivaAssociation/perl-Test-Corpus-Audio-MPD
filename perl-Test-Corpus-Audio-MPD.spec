@@ -14,10 +14,10 @@ Source0:    http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstre
 BuildRequires: perl(English)
 BuildRequires: perl(File::Basename)
 BuildRequires: perl(File::Copy)
-BuildRequires: perl(File::Spec::Functions)
+BuildRequires: perl(File::ShareDir)
 BuildRequires: perl(File::Temp)
-BuildRequires: perl(Module::Util)
 BuildRequires: perl(Readonly)
+BuildRequires: perl(Path::Class)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(base)
 
