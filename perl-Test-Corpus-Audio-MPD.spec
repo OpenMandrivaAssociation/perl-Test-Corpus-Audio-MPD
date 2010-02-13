@@ -1,5 +1,5 @@
 %define upstream_name    Test-Corpus-Audio-MPD
-%define upstream_version 1.093230
+%define upstream_version 1.100430
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -42,16 +42,15 @@ Everything described above is done automatically when the module is
 %setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
-
-%{make}
+%{__perl} Build.PL installdirs=vendor
+./Build
 
 %check
-%{make} test
+./Build test
 
 %install
-rm -rf %buildroot
-%makeinstall_std
+%{__rm} -rf %{buildroot}
+./Build install destdir=%{buildroot}
 
 %clean
 rm -rf %buildroot
@@ -61,5 +60,3 @@ rm -rf %buildroot
 %doc Changes LICENSE README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
