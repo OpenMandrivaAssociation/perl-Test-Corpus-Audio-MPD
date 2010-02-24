@@ -1,5 +1,5 @@
 %define upstream_name    Test-Corpus-Audio-MPD
-%define upstream_version 1.100430
+%define upstream_version 1.100500
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
