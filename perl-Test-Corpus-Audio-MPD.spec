@@ -10,17 +10,15 @@ License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.gz
-
 BuildRequires: perl(English)
 BuildRequires: perl(File::Basename)
 BuildRequires: perl(File::Copy)
 BuildRequires: perl(File::ShareDir)
 BuildRequires: perl(File::Temp)
+BuildRequires: perl(Module::Build)
 BuildRequires: perl(Readonly)
 BuildRequires: perl(Path::Class)
 BuildRequires: perl(Test::More)
-BuildRequires: perl(base)
-
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
