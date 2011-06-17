@@ -1,9 +1,9 @@
 %define upstream_name    Test-Corpus-Audio-MPD
-%define upstream_version 1.110710
+%define upstream_version 1.111260
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Automate launching of fake mdp for testing purposes
 License:    GPL+ or Artistic
@@ -14,6 +14,7 @@ BuildRequires: perl(English)
 BuildRequires: perl(File::Basename)
 BuildRequires: perl(File::Copy)
 BuildRequires: perl(File::ShareDir)
+BuildRequires: perl(File::ShareDir::PathClass)
 BuildRequires: perl(File::Temp)
 BuildRequires: perl(Module::Build)
 BuildRequires: perl(Readonly)
