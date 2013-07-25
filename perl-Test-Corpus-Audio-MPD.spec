@@ -1,15 +1,15 @@
 %define upstream_name    Test-Corpus-Audio-MPD
-%define upstream_version 1.111260
+%define upstream_version 1.120990
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 1.120990
+Release:	1
 
 Summary:	Automate launching of fake mdp for testing purposes
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Test/Test-Corpus-Audio-MPD-1.120990.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(English)
@@ -93,3 +93,4 @@ perl Build.PL installdirs=vendor
 
 * Fri Nov 06 2009 cpan2dist 1.092920-1mdv
 - initial mdv release, generated with cpan2dist
+
