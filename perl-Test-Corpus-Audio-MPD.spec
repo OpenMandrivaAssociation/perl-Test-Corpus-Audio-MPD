@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 1.120990
-Release:	2
+Release:	3
 
 Summary:	Automate launching of fake mdp for testing purposes
 License:	GPL+ or Artistic
