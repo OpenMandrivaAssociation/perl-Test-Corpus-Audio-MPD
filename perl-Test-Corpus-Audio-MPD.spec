@@ -8,7 +8,7 @@ Release:	3
 Summary:	Automate launching of fake mdp for testing purposes
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Test/Test-Corpus-Audio-MPD-1.120990.tar.gz
 
 BuildRequires:	perl-devel
