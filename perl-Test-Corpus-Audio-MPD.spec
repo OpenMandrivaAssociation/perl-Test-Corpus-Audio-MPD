@@ -2,14 +2,14 @@
 %define upstream_version 1.120990
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 1.120990
-Release:	3
+Version:	%{upstream_version}
+Release:	4
 
 Summary:	Automate launching of fake mdp for testing purposes
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Test/Test-Corpus-Audio-MPD-1.120990.tar.gz
+Url:		https://github.com/jquelin/test-corpus-audio-mpd
+Source0:	https://cpan.metacpan.org/authors/id/J/JQ/JQUELIN/Test-Corpus-Audio-MPD-1.120990.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(English)
