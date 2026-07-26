@@ -1,9 +1,7 @@
 %define upstream_name    Test-Corpus-Audio-MPD
-%define upstream_version 1.120990
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	4
+Version:	1.120990
+Release:	5
 
 Summary:	Automate launching of fake mdp for testing purposes
 License:	GPL+ or Artistic
@@ -39,7 +37,7 @@ Everything described above is done automatically when the module is
 'use'-d.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Build.PL installdirs=vendor
